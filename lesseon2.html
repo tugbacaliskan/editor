@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lesson 1</title>
+        <style>
+            .icerik{
+                float: left;
+                width: 150px;
+                height: 100px;
+                margin: 30px;
+                padding: 25px;
+                border: 1px solid #ddd;
+                border-radius: 15px;
+                background-color: silver;
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function tikla(){
+                gosterilenMesaj ('tiklandi', 'Hoşgeldiniz.');
+            }
+            function ekle(){
+                gosterilenMesaj('eklendi', 'Başarıyla eklendi.');
+            }
+            function guncelle() {
+                gosterilenMesaj('guncellendi', 'Başarıyla güncellendi.')
+            }
+            function gosterilenMesaj(id, yazilacakMesaj){
+                document.getElementById(id).innerText=yazilacakMesaj;
+            }
+
+        </script>
+        <button onclick="tikla()">Tıklayınız</button>
+        <button onclick="ekle()">Ekle</button>
+        <button onclick="guncelle()">Güncelle</button>
+        <br />
+        <div class="icerik">
+            <span id="tiklandi"></span>
+        </div>
+        <div class="icerik">
+            <span id="eklendi"></span>
+        </div>
+        <div class="icerik">
+            <span id="guncellendi"></span>
+        </div>
+    </body>
+</html>

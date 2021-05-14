@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lesson 1</title>
+        <style>
+            #mesaj{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            alert("mesaj kutusu");
+            function mesajGoster1(){
+                alert("mesaj kutusu");
+            }
+
+            function mesajGoster2(){
+                document.getElementById('mesaj').innerText= 'Merhaba Dünya!';
+            }
+        </script>
+        <button onclick="mesajGoster1()">Tıklayınız</button>
+        <button onclick="mesajGoster2()">Tıklayınız</button>
+        <br />
+        <span id="mesaj"></span>
+    </body>
+</html>

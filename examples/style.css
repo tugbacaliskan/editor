@@ -1,0 +1,61 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+html, body, .container{
+    height: 100%;
+    width: 100%;
+    display: flex;/*Elemetleri serbest bırak*/
+    align-items: center;/*Dikeyde ortala*/
+    justify-content: center;/*Yatayda ortala*/
+}
+
+.container{
+    flex-direction: column;/*Serbest bıraktığım elementin flexine yukarıdan aşağı yön verdik*/
+    width: 80%;
+    height: max-content;
+    max-height: 90%;
+    max-width: 1280px;
+    align-items: flex-start;
+    border: 2px solid #09a;
+    border-radius: 3px;
+    padding: 2rem;
+}
+
+h1{
+    padding: 0 0 2rem 0;
+    color:#09a;
+}
+
+p{
+    line-height: 150%;
+    border: 2px solid #999;
+    transition: all 300ms linear;
+    border-radius: 3px;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+p:focus{
+    border-color:#444;
+
+}
+
+.buttons{
+    margin-top: 1rem;
+}
+
+.buttons button{
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    margin-right: .5rem;
+}
+
+select{
+    margin-top: 1rem;
+}
